@@ -1,7 +1,2 @@
-FROM node:18
-
-RUN npm install -g juice-shop
-
-CMD ["sh", "-c", "juice-shop --port $PORT"]
-
+FROM bkimminich/juice-shop
 EXPOSE 3000
