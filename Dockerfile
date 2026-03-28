@@ -1,9 +1,7 @@
 FROM node:18
 
-RUN npm install -g @owasp/juice-shop
-
-ENV PORT=3001
+RUN npm install -g juice-shop
 
 CMD ["sh", "-c", "juice-shop --port $PORT"]
 
-EXPOSE 3001
+EXPOSE 3000
